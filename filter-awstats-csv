@@ -15,14 +15,6 @@ import optparse
 from config import *
 from urlparse import urlparse
 
-URL_COL    = 9 # column number for URL to filter (starts at 0)
-SKIP_FIRST = True # do not attempt to filter header
-PARAMETERS = ["lang=fr", "lang=en", "lang=it", "lang=es", "lang=de",
-              "mobile=1", "nomobile=1", "nomobile=0", "format=embed",
-              "format=reader", "format=noaccess", "format=noaccess"]
-              # list of supported/allowed GET paramters
-SAFE_PARAM = ["%22", "%27", "\\", "'", "A=0"] # scrap allowed in URL
-
 def is_valid_url(input_url):
     url = urlparse(input_url)
     is_valid = True
