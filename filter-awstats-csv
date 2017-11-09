@@ -5,7 +5,7 @@ Remove scrap from awstats CSV.
 (c) Javier Arias, Open Book Publishers, November 2017
 Use of this software is governed by the terms of the MIT -- see LICENSE
 
-usage: filter-awstats-csv [inputfile] [outputfile]
+usage: filter-awstats-csv [-d] inputfile outputfile
 """
 
 import os
