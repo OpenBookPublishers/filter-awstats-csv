@@ -12,6 +12,7 @@ import os
 import csv
 import sys
 import optparse
+from config import *
 from urlparse import urlparse
 
 URL_COL    = 9 # column number for URL to filter (starts at 0)
